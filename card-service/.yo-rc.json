@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.adrixus.demo"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "microservice",
+    "baseName": "cardservice",
+    "packageName": "com.adrixus.demo",
+    "packageFolder": "com/adrixus/demo",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjJhODVhMGZlYjQzZmU5MjdmZDU5ZjczYmNkYzRlYjcxN2JjNTYzNzQyMGY2ZjEzNzhiNDMzM2NiYjVhYTFhMzlkOTcyNTljNTg1NjFmZTU1Njk2NDdlMmYxODIwZGU0ZmY1Njc5NWU3NDBiOGM0ZWNmMGMyYmE2OTQzZmEwNTI=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1588836324195,
+    "testFrameworks": ["cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

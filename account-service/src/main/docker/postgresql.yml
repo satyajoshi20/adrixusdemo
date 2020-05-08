@@ -1,0 +1,11 @@
+version: '2'
+services:
+  accountservice-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/accountservice/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=accountservice
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

@@ -1,0 +1,11 @@
+version: '2'
+services:
+  customerservice-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/customerservice/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=customerservice
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
