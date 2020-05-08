@@ -1,14 +1,10 @@
 package com.adrixus.demo.cucumber;
 
-import com.adrixus.demo.CustomerserviceApp;
 import io.cucumber.java.Before;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.web.WebAppConfiguration;
 
-@SpringBootTest
+/*@SpringBootTest
 @WebAppConfiguration
-@ContextConfiguration(classes = CustomerserviceApp.class)
+@ContextConfiguration(classes = CustomerserviceApp.class)*/
 public class CucumberContextConfiguration {
 
     @Before

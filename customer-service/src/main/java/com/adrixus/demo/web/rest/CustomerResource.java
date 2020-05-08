@@ -47,13 +47,6 @@ public class CustomerResource {
         return new ResponseEntity<>(apiResponse, OK);
     }
 
-    @GetMapping("/version")
-    public ResponseEntity<String> foo()
-    {
-        System.out.println("come here !!!!!");
-        return new ResponseEntity<String>("1.0", HttpStatus.OK);
-    }
-
     /**
      * Fetch customer by id
      * @param id
@@ -71,6 +64,12 @@ public class CustomerResource {
         }
 
         return new ResponseEntity<>((new ApiResponse<>(FAILURE, "Customer with id " + id + " not found", null)), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(Exception.class)
+    private ResponseEntity<ApiResponse> handleAllUnhandledException(Exception ex)
+    {
+        return new ResponseEntity(new ApiResponse(FAILURE, "Server Error", null), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
 }

@@ -5,6 +5,8 @@ public class SaveCustomerResponse {
 
     private Long customerId;
 
+    public SaveCustomerResponse() { }
+
     public SaveCustomerResponse(Long customerId) {
         this.customerId = customerId;
     }
